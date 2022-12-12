@@ -1,0 +1,258 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-header {
+    top: 0;
+    position: absolute;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #1e2a28;   
+    left: 0;
+	width: 100%;
+    z-index: 10;
+    padding: 15px;
+}
+
+a:link, a:visited{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+.banner
+{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    /* background: #111; */
+    transition: 0.5s;
+}
+
+.scoreboard{
+    z-index: 10;
+    position: absolute;
+}
+
+.scoreboard a{
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 800;
+    background: rgb(0, 0, 0);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+.scoreboard a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.banner img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 50%;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(167, 167, 167), rgb(255, 255, 255));
+ 
+}
+
+.text
+{
+    position: relative;
+    z-index: 10;
+    margin-top: 350px;
+}
+
+.text h3
+{
+    margin-top: -140px;
+    position: relative;
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    line-height: 0.1em;
+    padding-bottom: 20px;
+}
+
+.text ul
+{
+    position: relative;
+    margin-left: 10px;
+}
+
+.text ul li
+{
+    position: relative;
+    padding: 8px;
+}
+
+.start
+{
+    font-size: 2.1em;
+    background: rgb(33, 39, 39);
+    padding: 7px 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    position: absolute; 
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+.start :hover{
+    opacity: 0.8;
+}
+
+
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 80%;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+.footer a
+{
+    color: black;
+}
+
+
+/****************************************************/
+
+.vertical-menu {
+    width: 150px;
+    z-index: 100;
+    right: 0;
+    position: absolute;
+    height: 100%; /* Full height */
+     /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    top: 0;
+    
+  }
+  
+  .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+/*****************************************************/
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1000; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 4px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    right: 0;
+    opacity: 70%;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: rgb(216, 231, 217);
+  }

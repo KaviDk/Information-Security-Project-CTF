@@ -1,0 +1,7 @@
+get gobuster https://github.com/OJ/gobuster/releases 
+
+use the given wordlist.txt and find out the image file(location) from it
+
+use wget or any methods to download image file
+
+dig out the lost data from it...
